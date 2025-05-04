@@ -1,7 +1,7 @@
 * {
   margin: 0px;
   padding: 0px;
-  outline: 1px solid #000;
+  /* outline: 1px solid #000; */
 }
 
 body {
@@ -11,7 +11,7 @@ body {
 
 .container {
   display: grid;
-  grid-template-columns: 350px 1fr 250px;
+  grid-template-columns: 350px 1fr 350px;
   grid-template-rows: 200px 1fr 1fr;
   height: 100vh;
 }
@@ -91,7 +91,7 @@ input {
   height: 50px;
   border-radius: 50%;
   /* background-color: black; */
-  background-image: url("../svg/poornima.jpg");
+  background-image: url("../svg/poornima.avif");
   background-size: cover;
   margin: 0px 20px;
 }
@@ -106,7 +106,7 @@ input {
   width: 80px;
   height: 80px;
   border-radius: 50%;
-  background-image: url("../svg/poornima.jpg");
+  background-image: url("../svg/poornima.avif");
   background-size: cover;
   margin: 0px 20px;
 }
@@ -139,7 +139,8 @@ input {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-auto-flow: row;
-  height: 650px;
+  height: 500px;
+  /* padding: 40px; */
 }
 
 .card-holder {
@@ -148,11 +149,56 @@ input {
 }
 
 .card {
-  grid-column: 2/3;
+  width: 450px;
+  height: 180px;
+  background-color: #fff;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 20px auto;
+  display: grid;
+  grid-template-columns: 10px 1fr;
 }
 
 .main-area-right {
   grid-column: 3/4;
   grid-row: 2/4;
   background-color: #e2e8f0;
+}
+
+.div_bottom_right {
+  height: 91%;
+  display: grid;
+  grid-template-rows: 1fr 20px 1fr;
+}
+
+.right_card_container {
+  display: grid;
+  background-color: #fff;
+  margin: 20px;
+  margin: 20px 40px;
+  border-radius: 20px;
+}
+.right_card_container_bottom {
+  display: grid;
+  background-color: #fff;
+  margin: 20px;
+  margin: 20px 40px;
+  border-radius: 20px;
+  grid-template-rows: repeat(3, 1fr);
+}
+
+.announcement_card {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+}
+
+.right_card_container_bottom {
+  display: grid;
+  grid-template-rows: 30% 70%;
+}
+
+.sepereate {
+  padding: 10px;
+  display: grid;
+  grid-template-columns: 30% 70%;
 }
